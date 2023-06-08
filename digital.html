@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Digital</title>
+    <style>
+      body {
+        background-image: url("bgdig.png");
+        background-size: cover;
+      }
+      
+      .btn-container {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        height: 100vh;
+        animation: fadeIn 2s;
+      }
+      
+      .btn {
+        width: 200px;
+        height: 80px;
+        font-family: trebuchet ms;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        color: #dfdcdc;
+        background-color: #dd1c53;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        margin: 0 20px;
+        animation: fadeIn 2s;
+      }
+
+      @keyframes fadeIn{
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+      }
+      
+      .btn:hover {
+        background-color: #680d2a;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="btn-container">
+        <button class="btn" onclick="location.href='anime.php'">Anime</button>
+        <button class="btn" onclick="location.href='realistic.php'">Realistic</button>
+        <button class="btn" onclick="location.href='concept.php'">Concept</button>
+      </div>
+      
+  </body>
+</html>
